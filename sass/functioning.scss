@@ -1,0 +1,71 @@
+.functioning {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+
+    .title-functioning {
+        padding-bottom: 10px;
+        width: 340px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font-family_main;
+    }
+
+    .functioning-btn {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        width: 96%;
+        text-align: center;
+        margin: 20px 0 20px 16px;
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+
+        .functioning-text {
+            font-weight: 500;
+            font-size: 16px;
+            font-family: $font-family_main;
+        }
+
+        .circle {
+            position: absolute;
+            left: 20px;
+            padding: 4px 8px;
+            background-color: rgba(147, 86, 220, 1);
+            color: white;
+            border-radius: 50%;
+        }
+    }
+
+    @include desktop {
+        max-width: 1050px;
+
+        .functioning-button {
+            display: flex;
+
+            .functioning-btn {
+                width: 322.49px;
+                margin-right: 40px;
+                margin-left: 10px;
+                padding: 20px 58px 20px 0;
+                font-weight: 500;
+                font-family: $font-family_main;
+
+                .functioning-text {
+                    margin-left: 20px;
+                }
+
+                .circle {
+                    position: relative;
+                    left: -15px;
+                }
+            }
+        }
+    }
+}
