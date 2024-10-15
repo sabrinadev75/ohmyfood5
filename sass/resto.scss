@@ -1,205 +1,205 @@
 .back {
+  .resto {
+    background-color: rgba(246, 246, 246, 0.7);
+
+    .all-cards {
+      background-color: rgba(246, 246, 246, 0.7);
+      padding: 45px 0;
+      width: 90%;
+      margin: auto;
+
+      .restaurant-title {
+        width: 340px;
+        font-family: $font-family_main;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .card-nav {
+        text-decoration: none;
+        color: #353535;
+
+        .card {
+          width: 100%;
+          height: 251px;
+          border-radius: 15px;
+          margin: 24px auto;
+          background-color: white;
+          position: relative;
+          text-decoration: none;
+          color: inherit;
+
+          #card1 {
+            background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+          }
+
+          #card2 {
+            background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: 0px -145px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+          }
+
+          #card3 {
+            background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+          }
+
+          #card4 {
+            background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+          }
+
+          .card-img {
+            width: 100%;
+            height: 170px;
+          }
+
+          .news {
+            font-weight: 500;
+            position: absolute;
+            right: 20px;
+            top: 16px;
+            color: rgba(0, 135, 102, 1);
+            background-color: rgba(153, 226, 208, 1);
+            padding: 6px 10px;
+            font-family: $font-family_main;
+            font-size: 14px;
+            border-radius: 2px;
+          }
+
+          .card-text {
+            padding: 5px 10px;
+
+            h3 {
+              line-height: 0;
+              margin-bottom: 28px;
+              font-size: 18px;
+              font-weight: 700;
+              font-family: $font-family_main;
+            }
+
+            p {
+              line-height: 0;
+              font-size: 17px;
+              font-weight: 300;
+              font-family: $font-family_main;
+            }
+          }
+
+          .like {
+            display: none;
+          }
+
+          .dislike {
+            display: inline;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 20px;
+          }
+
+          .block-like {
+            position: relative;
+            bottom: 50px;
+            left: 86%;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          input {
+            display: none;
+            &:checked + .block-like {
+              .dislike {
+                display: none;
+              }
+
+              .like {
+                display: inline;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    background-color: rgba(246, 246, 246, 1);
+
     .resto {
-        background-color: rgba(246, 246, 246, 0.7);
+      max-width: 1080px;
+      margin: auto;
+      width: 90%;
 
-        .all-cards {
-            background-color: rgba(246, 246, 246, 0.7);
-            padding: 45px 0;
-            width: 90%;
-            margin: auto;
+      .all-cards {
+        padding: 45px 0 5px 0;
+        width: 100%;
 
-            .restaurant-title {
-                width: 340px;
-                font-family: $font-family_main;
-                font-size: 24px;
-                font-weight: 700;
+        .cards-bloc {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .card-nav {
+            width: 45%;
+          }
+
+          .card {
+            margin: 24px 0;
+
+            #card1 {
+              background-position: 0px -107px;
             }
 
-            .card-nav {
-                text-decoration: none;
-                color: #353535;
+            #card2 {
+              background-position: 0px -244px;
+            }
 
-                .card {
-                    width: 100%;
-                    height: 251px;
-                    border-radius: 15px;
-                    margin: 24px auto;
-                    background-color: white;
-                    position: relative;
-                    text-decoration: none;
-                    color: inherit;
+            #card3 {
+              background-position: 0px -103px;
+            }
 
-                    #card1 {
-                        background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-                        background-repeat: no-repeat;
-                        background-position: bottom;
-                        background-size: cover;
-                        border-radius: 15px 15px 0 0;
-                    }
+            #card4 {
+              background-position: 0px -110px;
+            }
 
-                    #card2 {
-                        background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-                        background-repeat: no-repeat;
-                        background-position: 0px -145px;
-                        background-size: cover;
-                        border-radius: 15px 15px 0 0;
-                    }
+            .block-like {
+              position: relative;
+              bottom: 44px;
+              left: 91%;
+              &:hover {
+                cursor: pointer;
+              }
+            }
 
-                    #card3 {
-                        background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-                        background-repeat: no-repeat;
-                        background-position: bottom;
-                        background-size: cover;
-                        border-radius: 15px 15px 0 0;
-                    }
-
-                    #card4 {
-                        background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-                        background-repeat: no-repeat;
-                        background-position: bottom;
-                        background-size: cover;
-                        border-radius: 15px 15px 0 0;
-                    }
-
-                    .card-img {
-                        width: 100%;
-                        height: 170px;
-                    }
-
-                    .news {
-                        font-weight: 500;
-                        position: absolute;
-                        right: 20px;
-                        top: 16px;
-                        color: rgba(0, 135, 102, 1);
-                        background-color: rgba(153, 226, 208, 1);
-                        padding: 6px 10px;
-                        font-family: $font-family_main;
-                        font-size: 14px;
-                        border-radius: 2px;
-                    }
-
-                    .card-text {
-                        padding: 5px 10px;
-
-                        h3 {
-                            line-height: 0;
-                            margin-bottom: 28px;
-                            font-size: 18px;
-                            font-weight: 700;
-                            font-family: $font-family_main;
-                        }
-
-                        p {
-                            line-height: 0;
-                            font-size: 17px;
-                            font-weight: 300;
-                            font-family: $font-family_main;
-                        }
-                    }
-
-                    .like {
-                        display: none;
-                    }
-
-                    .dislike {
-                        display: inline;
-                        position: absolute;
-                        top: 10px;
-                        left: 10px;
-                        width: 20px;
-                    }
-
-                    .block-like {
-                        position: relative;
-                        bottom: 50px;
-                        left: 86%;
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-
-                    input {
-                        display: none;
-                        &:checked + .block-like {
-                            .dislike {
-                                display: none;
-                            }
-
-                            .like {
-                                display: inline;
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                width: 20px;
-                            }
-                        }
-                    }
+            input {
+              &:checked + .block-like {
+                .like {
+                  display: inline;
+                  width: 20px;
                 }
+              }
             }
+          }
         }
+      }
     }
-
-    @include desktop {
-        background-color: rgba(246, 246, 246, 1);
-
-        .resto {
-            max-width: 1080px;
-            margin: auto;
-            width: 90%;
-
-            .all-cards {
-                padding: 45px 0 5px 0;
-                width: 100%;
-
-                .cards-bloc {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    .card-nav {
-                        width: 45%;
-                    }
-
-                    .card {
-                        margin: 24px 0;
-
-                        #card1 {
-                            background-position: 0px -107px;
-                        }
-
-                        #card2 {
-                            background-position: 0px -244px;
-                        }
-
-                        #card3 {
-                            background-position: 0px -103px;
-                        }
-
-                        #card4 {
-                            background-position: 0px -110px;
-                        }
-
-                        .block-like {
-                            position: relative;
-                            bottom: 44px;
-                            left: 91%;
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-
-                        input {
-                            &:checked + .block-like {
-                                .like {
-                                    display: inline;
-                                    width: 20px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }
