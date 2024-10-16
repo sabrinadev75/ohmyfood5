@@ -1,236 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood</title>
+    <link rel="stylesheet" href="sass/compiled/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ohmyfood</title>
-  <link rel="stylesheet" href="sass/compiled/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-</head>
-
-<body class="body-resto-single-page">
-  <!--début du header-->
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <i class="fa-solid fa-arrow-left"></i>
-      </a>
-      <img src="images/logo/ohmyfood@2x.svg" alt="logo" />
-    </div>
-  </header>
-  <!--fin du header-->
-
-  <!-- Début de la partie haute-->
-
-  <div class="img-background">
-    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette-du-gout" />
-  </div>
-  <!--block principal-->
-  <div class="block-conteneur">
-    <div class="title-conteneur">
-      <h2 class="name-restaurant">La palette du goût</h2>
-      <input type="checkbox" id="resto-2" />
-      <label class="block-like" for="resto-2">
-        <img src="./images/icon/Like.png " class="dislike" alt="dislike icon" />
-        <img src="./images/icon/Like.svg" class="like" alt="like icon" />
-      </label>
-    </div>
-
-    <div class="entree">
-      <h4 class="title-menu">ENTRÉES</h4>
-
-      <input type="checkbox" id="menu1" />
-      <label class="menu" for="menu1">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Fricassée d'escargots</h3>
-            <p class="menu-p">Au piment d'Éspelette</p>
-          </div>
-          <div class="price">
-            <span class="prix1">25€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu2" />
-      <label class="menu" for="menu2">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Foie gras de canard mi-cuit</h3>
-            <p class="menu-p">Et ses copeaux de truffe noire</p>
-          </div>
-          <div class="price">
-            <span class="prix1">35€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu3" />
-      <label class="menu" for="menu3">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Oeuf au plat</h3>
-            <p class="menu-p">Assaisonné à la truffe sur lit de caviar</p>
-          </div>
-          <div class="price">
-            <span class="prix1">20€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-    </div>
-
-    <div class="plat">
-      <h4 class="title-menu">PLATS</h4>
-      <input type="checkbox" id="menu4" />
-      <label class="menu" for="menu4">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Filet de boeuf aux herbes</h3>
-            <p class="menu-p">Accompagné de sa ribambelle de légumes</p>
-          </div>
-          <div class="price">
-            <span class="prix1">40€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu5" />
-      <label class="menu" for="menu5">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Parmentier de queue de boeuf</h3>
-            <p class="menu-p">À la truffe noire sur sa purée de panais</p>
-          </div>
-          <div class="price">
-            <span class="prix1">35€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu6" />
-      <label class="menu" for="menu6">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Filet de turbot</h3>
-            <p class="menu-p">Aux agrumes</p>
-          </div>
-          <div class="price">
-            <span class="prix1">44€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-    </div>
-
-    <div class="dessert">
-      <h4 class="title-menu">DESSERTS</h4>
-      <input type="checkbox" id="menu7" />
-      <label class="menu" for="menu7">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Paris-Brest</h3>
-            <p class="menu-p">Revisité</p>
-          </div>
-          <div class="price">
-            <span class="prix1">18€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu8" />
-      <label class="menu" for="menu8">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Macaron au chocolat</h3>
-            <p class="menu-p">Et glace à la vanille de Madagascar</p>
-          </div>
-          <div class="price">
-            <span class="prix1">22€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-
-      <input type="checkbox" id="menu9" />
-      <label class="menu" for="menu9">
-        <div class="info">
-          <div>
-            <h3 class="title-h3">Mousse au chocolat</h3>
-            <p class="menu-p">Au piment d'Espelette et à la truffe noire</p>
-          </div>
-          <div class="price">
-            <span class="prix1">23€</span>
-          </div>
-        </div>
-        <div class="check">
-          <img src="images/icon/Check.svg" alt="check" />
-        </div>
-      </label>
-    </div>
-
-    <div class="button-commander">
-      <button class="btn-commander">Commander</button>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer">
-      <div class="footer-logo">
-        <h4 class="logo2">ohmyfood</h4>
+  <body class="body-resto-single-page">
+    <!--début du header-->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+          <img src="images/logo/ohmyfood@2x.svg" alt="logo" />
+        </a>
       </div>
-      <div>
-        <ul class="link-footer">
-          <li class="link">
-            <i class="fa-solid fa-utensils"></i>
-            <a href="#" class="footer-link">Proposer un restaurant</a>
-          </li>
-          <li class="link">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="#" class="footer-link">Devenir partenaire</a>
-          </li>
-          <li class="link">
-            <a href="#" class="footer-link">Mention légales</a>
-          </li>
-          <li class="link">
-            <a href="#" class="footer-link">Contact</a>
-          </li>
-        </ul>
+    </header>
+    <!--fin du header-->
+
+    <!-- Début de la partie haute-->
+
+    <div class="img-background">
+      <img
+        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="palette-du-gout"
+      />
+    </div>
+    <!--block principal-->
+    <div class="block-conteneur">
+      <div class="title-conteneur">
+        <h2 class="name-restaurant">La palette du goût</h2>
+        <input type="checkbox" id="resto-2" />
+        <label class="block-like" for="resto-2">
+          <img
+            src="./images/icon/Like.png "
+            class="dislike"
+            alt="dislike icon"
+          />
+          <img src="./images/icon/Like.svg" class="like" alt="like icon" />
+        </label>
+      </div>
+
+      <div class="entree">
+        <h4 class="title-menu">ENTRÉES</h4>
+
+        <input type="checkbox" id="menu1" />
+        <label class="menu" for="menu1">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Fricassée d'escargots</span>
+              <span class="menu-p">Au piment d'Éspelette</span>
+            </span>
+            <span class="price">
+              <span class="prix1">25€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu2" />
+        <label class="menu" for="menu2">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Foie gras de canard mi-cuit</span>
+              <span class="menu-p">Et ses copeaux de truffe noire</span>
+            </span>
+            <span class="price">
+              <span class="prix1">35€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu3" />
+        <label class="menu" for="menu3">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Oeuf au plat</span>
+              <span class="menu-p"
+                >Assaisonné à la truffe sur lit de caviar</span
+              >
+            </span>
+            <span class="price">
+              <span class="prix1">20€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+      </div>
+
+      <div class="plat">
+        <h4 class="title-menu">PLATS</h4>
+        <input type="checkbox" id="menu4" />
+        <label class="menu" for="menu4">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Filet de boeuf aux herbes</span>
+              <span class="menu-p">Accompagné de sa ribambelle de légumes</span>
+            </span>
+            <span class="price">
+              <span class="prix1">40€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu5" />
+        <label class="menu" for="menu5">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Parmentier de queue de boeuf</span>
+              <span class="menu-p"
+                >À la truffe noire sur sa purée de panais</span
+              >
+            </span>
+            <span class="price">
+              <span class="prix1">35€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu6" />
+        <label class="menu" for="menu6">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Filet de turbot</span>
+              <span class="menu-p">Aux agrumes</span>
+            </span>
+            <span class="price">
+              <span class="prix1">44€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+      </div>
+
+      <div class="dessert">
+        <h4 class="title-menu">DESSERTS</h4>
+        <input type="checkbox" id="menu7" />
+        <label class="menu" for="menu7">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Paris-Brest</span>
+              <span class="menu-p">Revisité</span>
+            </span>
+            <span class="price">
+              <span class="prix1">18€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu8" />
+        <label class="menu" for="menu8">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Macaron au chocolat</span>
+              <span class="menu-p">Et glace à la vanille de Madagascar</span>
+            </span>
+            <span class="price">
+              <span class="prix1">22€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+
+        <input type="checkbox" id="menu9" />
+        <label class="menu" for="menu9">
+          <span class="info">
+            <span class="title-wrapper">
+              <span class="title-h3">Mousse au chocolat</span>
+              <span class="menu-p"
+                >Au piment d'Espelette et à la truffe noire</span
+              >
+            </span>
+            <span class="price">
+              <span class="prix1">23€</span>
+            </span>
+          </span>
+          <span class="check">
+            <img src="images/icon/Check.svg" alt="check" />
+          </span>
+        </label>
+      </div>
+
+      <div class="button-commander">
+        <button class="btn-commander">Commander</button>
       </div>
     </div>
-  </footer>
-</body>
 
+    <footer>
+      <div class="footer">
+        <div class="footer-logo">
+          <h4 class="logo2">ohmyfood</h4>
+        </div>
+
+        <div>
+          <ul class="link-footer">
+            <li class="link">
+              <i class="fa-solid fa-utensils"></i>
+              <a href="#" class="footer-link">Proposer un restaurant</a>
+            </li>
+            <li class="link">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <a href="#" class="footer-link">Devenir partenaire</a>
+            </li>
+            <li class="link">
+              <a href="#" class="footer-link">Mention légales</a>
+            </li>
+            <li class="link">
+              <a href="#" class="footer-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -234,53 +234,85 @@ header .fa-location-dot {
   font-size: 24px;
   font-weight: 700;
 }
-.back .resto .all-cards .card-nav {
-  text-decoration: none;
-  color: #353535;
-}
-.back .resto .all-cards .card-nav .card {
+.back .resto .all-cards .card {
+  position: relative;
   width: 100%;
   height: 251px;
   border-radius: 15px;
   margin: 24px auto;
   background-color: white;
-  position: relative;
   text-decoration: none;
   color: inherit;
 }
-.back .resto .all-cards .card-nav .card #card1 {
+.back .resto .all-cards .card .coeur-btn {
+  position: absolute;
+  bottom: 35px;
+  right: 50px;
+}
+.back .resto .all-cards .card .coeur-btn .like {
+  display: none;
+}
+.back .resto .all-cards .card .coeur-btn .dislike {
+  display: inline;
+  position: absolute;
+  width: 20px;
+}
+.back .resto .all-cards .card .coeur-btn .block-like {
+  position: relative;
+}
+.back .resto .all-cards .card .coeur-btn .block-like:hover {
+  cursor: pointer;
+}
+.back .resto .all-cards .card .coeur-btn input {
+  display: none;
+}
+.back .resto .all-cards .card .coeur-btn input:checked + .block-like .dislike {
+  display: none;
+}
+.back .resto .all-cards .card .coeur-btn input:checked + .block-like .like {
+  display: inline;
+  position: absolute;
+  width: 20px;
+}
+.back .resto .all-cards .card .card-nav {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: #353535;
+}
+.back .resto .all-cards .card .card-nav #card1 {
   background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.back .resto .all-cards .card-nav .card #card2 {
+.back .resto .all-cards .card .card-nav #card2 {
   background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: 0px -145px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.back .resto .all-cards .card-nav .card #card3 {
+.back .resto .all-cards .card .card-nav #card3 {
   background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.back .resto .all-cards .card-nav .card #card4 {
+.back .resto .all-cards .card .card-nav #card4 {
   background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.back .resto .all-cards .card-nav .card .card-img {
+.back .resto .all-cards .card .card-nav .card-img {
   width: 100%;
   height: 170px;
 }
-.back .resto .all-cards .card-nav .card .news {
+.back .resto .all-cards .card .card-nav .news {
   font-weight: 500;
   position: absolute;
   right: 20px;
@@ -292,52 +324,21 @@ header .fa-location-dot {
   font-size: 14px;
   border-radius: 2px;
 }
-.back .resto .all-cards .card-nav .card .card-text {
+.back .resto .all-cards .card .card-nav .card-text {
   padding: 5px 10px;
 }
-.back .resto .all-cards .card-nav .card .card-text h3 {
+.back .resto .all-cards .card .card-nav .card-text h3 {
   line-height: 0;
   margin-bottom: 28px;
   font-size: 18px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
-.back .resto .all-cards .card-nav .card .card-text p {
+.back .resto .all-cards .card .card-nav .card-text p {
   line-height: 0;
   font-size: 17px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-}
-.back .resto .all-cards .card-nav .card .like {
-  display: none;
-}
-.back .resto .all-cards .card-nav .card .dislike {
-  display: inline;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20px;
-}
-.back .resto .all-cards .card-nav .card .block-like {
-  position: relative;
-  bottom: 50px;
-  left: 86%;
-}
-.back .resto .all-cards .card-nav .card .block-like:hover {
-  cursor: pointer;
-}
-.back .resto .all-cards .card-nav .card input {
-  display: none;
-}
-.back .resto .all-cards .card-nav .card input:checked + .block-like .dislike {
-  display: none;
-}
-.back .resto .all-cards .card-nav .card input:checked + .block-like .like {
-  display: inline;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20px;
 }
 @media (min-width: 1024px) {
   .back {
@@ -357,33 +358,30 @@ header .fa-location-dot {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .back .resto .all-cards .cards-bloc .card-nav {
+  .back .resto .all-cards .cards-bloc .card {
     width: 45%;
   }
-  .back .resto .all-cards .cards-bloc .card {
-    margin: 24px 0;
-  }
-  .back .resto .all-cards .cards-bloc .card #card1 {
+  .back .resto .all-cards .cards-bloc .card-nav #card1 {
     background-position: 0px -107px;
   }
-  .back .resto .all-cards .cards-bloc .card #card2 {
+  .back .resto .all-cards .cards-bloc .card-nav #card2 {
     background-position: 0px -244px;
   }
-  .back .resto .all-cards .cards-bloc .card #card3 {
+  .back .resto .all-cards .cards-bloc .card-nav #card3 {
     background-position: 0px -103px;
   }
-  .back .resto .all-cards .cards-bloc .card #card4 {
+  .back .resto .all-cards .cards-bloc .card-nav #card4 {
     background-position: 0px -110px;
   }
-  .back .resto .all-cards .cards-bloc .card .block-like {
+  .back .resto .all-cards .cards-bloc .card-nav .block-like {
     position: relative;
     bottom: 44px;
     left: 91%;
   }
-  .back .resto .all-cards .cards-bloc .card .block-like:hover {
+  .back .resto .all-cards .cards-bloc .card-nav .block-like:hover {
     cursor: pointer;
   }
-  .back .resto .all-cards .cards-bloc .card input:checked + .block-like .like {
+  .back .resto .all-cards .cards-bloc .card-nav input:checked + .block-like .like {
     display: inline;
     width: 20px;
   }
@@ -514,11 +512,20 @@ header .fa-location-dot {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .block-conteneur input:checked + .menu .title-h3 {
+  .block-conteneur input:checked + .menu .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding-left: 15px;
+  }
+  .block-conteneur input:checked + .menu .title-wrapper .title-h3 {
     width: 220px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 18.5px;
   }
   .block-conteneur .entree {
     width: 348px;
@@ -546,22 +553,27 @@ header .fa-location-dot {
   .block-conteneur .info {
     display: flex;
     align-items: center;
-    padding-bottom: 14px;
     width: 349px;
     transition: width 0.5s ease;
     justify-content: space-between;
   }
-  .block-conteneur .title-h3 {
+  .block-conteneur .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
     padding-left: 15px;
-    margin-bottom: 0px;
-    padding-top: 10px;
+  }
+  .block-conteneur .title-wrapper .title-h3 {
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 18.5px;
   }
   .block-conteneur .menu-p {
-    padding-left: 15px;
-    margin-top: 4px;
+    margin: 0;
     color: rgba(0, 0, 0, 0.6);
     font-family: "Roboto", sans-serif;
     font-size: 15px;
@@ -570,7 +582,6 @@ header .fa-location-dot {
     text-overflow: ellipsis;
   }
   .block-conteneur .price {
-    padding-top: 40px;
     padding-right: 10px;
   }
   .block-conteneur .check {
@@ -718,22 +729,28 @@ header .fa-location-dot {
   .block-conteneur .info {
     display: flex;
     align-items: center;
-    padding-bottom: 14px;
     width: 634px;
     transition: width 0.5s ease;
     justify-content: space-between;
   }
-  .block-conteneur .title-h3 {
+  .block-conteneur .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
     padding-left: 15px;
-    margin-bottom: 0px;
-    padding-top: 10px;
+  }
+  .block-conteneur .title-wrapper .title-h3 {
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 18.5px;
+    height: 19px;
   }
   .block-conteneur .menu-p {
-    padding-left: 15px;
-    margin-top: 4px;
+    margin: 0;
     color: rgba(0, 0, 0, 0.6);
     font-family: "Roboto", sans-serif;
     font-size: 15px;
@@ -742,9 +759,7 @@ header .fa-location-dot {
     text-overflow: ellipsis;
   }
   .block-conteneur .price {
-    padding-top: 40px;
     padding-right: 10px;
-    left: 18em;
     font-size: 15.4px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
@@ -789,7 +804,6 @@ header .fa-location-dot {
   .block-conteneur .btn-commander:hover {
     background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4);
-    color: white;
     transition: box-shadow 0.3s ease-in-out;
   }
 }

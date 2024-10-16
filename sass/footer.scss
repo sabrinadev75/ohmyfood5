@@ -1,76 +1,76 @@
 footer {
-    width: 100%;
+  width: 100%;
 
-    .footer {
-        background-color: rgba(53, 53, 53, 1);
-        color: white;
-        padding: 10px 20px;
+  .footer {
+    background-color: rgba(53, 53, 53, 1);
+    color: white;
+    padding: 10px 20px;
 
-        &-link {
-            color: white;
-            text-decoration: none;
-            font-family: $font-family_main;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        .logo2 {
-            font-family: $font-family_secondary;
-            font-weight: 900;
-            font-style: italic;
-            color: white;
-            font-size: 20px;
-        }
-        .link-footer {
-            padding: 0;
-        }
-
-        .link {
-            padding-top: 7px;
-        }
-
-        .fa-utensils {
-            color: white;
-            width: 20px;
-        }
-
-        .fa-handshake {
-            color: white;
-            width: 20px;
-        }
-
-        .fa-handshake-angle {
-            margin-right: 7px;
-        }
-
-        @include desktop {
-            padding: 45px 38px 5px 0;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-
-            &-logo {
-                margin-left: 90px;
-                padding-bottom: 5px;
-            }
-
-            .logo2 {
-                font-family: $font-family_secondary;
-                font-weight: 900;
-                font-style: italic;
-                color: white;
-                font-size: 23px;
-            }
-
-            ul {
-                display: flex;
-            }
-
-            li {
-                padding: 0 15px;
-            }
-        }
+    &-link {
+      color: white;
+      text-decoration: none;
+      font-family: $font-family_main;
     }
+
+    li {
+      list-style: none;
+    }
+
+    .logo2 {
+      font-family: $font-family_secondary;
+      font-weight: 900;
+      font-style: italic;
+      color: white;
+      font-size: 20px;
+    }
+    .link-footer {
+      padding: 0;
+    }
+
+    .link {
+      padding-top: 7px;
+    }
+
+    .fa-utensils {
+      color: white;
+      width: 20px;
+    }
+
+    .fa-handshake {
+      color: white;
+      width: 20px;
+    }
+
+    .fa-handshake-angle {
+      margin-right: 7px;
+    }
+
+    @include desktop {
+      padding: 45px 38px 5px 0;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      &-logo {
+        margin-left: 90px;
+        padding-bottom: 5px;
+      }
+
+      .logo2 {
+        font-family: $font-family_secondary;
+        font-weight: 900;
+        font-style: italic;
+        color: white;
+        font-size: 23px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      li {
+        padding: 0 15px;
+      }
+    }
+  }
 }

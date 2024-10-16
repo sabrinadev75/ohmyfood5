@@ -1,40 +1,40 @@
 header {
-    .logo {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        position: fixed;
-        width: 100%;
-        background-color: white;
-        z-index: 5;
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
 
-        img {
-            width: 170px;
-        }
+    img {
+      width: 170px;
     }
+  }
 
-    .location {
-        background-color: #eaeaea;
-        padding: 5px;
-        color: #353535;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
+  .location {
+    background-color: #eaeaea;
+    padding: 5px;
+    color: #353535;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
 
-        p {
-            text-align: center;
-            font-size: 16px;
-            font-family: "roboto", sans-serif;
-            margin: 12px;
-            font-weight: 400;
-            padding-right: 8px;
-        }
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-family: "roboto", sans-serif;
+      margin: 12px;
+      font-weight: 400;
+      padding-right: 8px;
     }
+  }
 
-    .fa-location-dot {
-        margin-right: 15px;
-    }
+  .fa-location-dot {
+    margin-right: 15px;
+  }
 }
